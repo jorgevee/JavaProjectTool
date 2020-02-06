@@ -6,6 +6,8 @@ import { getProjects } from "../actions/projectActions";
 import PropTypes from "prop-types";
 
 class Dashboard extends Component {
+  //Add Drag JS Functionality
+
   componentDidMount() {
     this.props.getProjects();
   }
@@ -15,7 +17,14 @@ class Dashboard extends Component {
 
     return (
       <div className="projects">
-        <div className="container">
+        <div
+          className="container"
+          style={{
+            padding: "10px",
+            cursor: "move",
+            zIndex: "10"
+          }}
+        >
           <div className="row">
             <div className="col-md-12">
               <h1 className="display-4 text-center">My Projects</h1>

@@ -130,6 +130,7 @@ class AddProject extends Component {
                   <input
                     type="submit"
                     className="btn btn-primary btn-block mt-4"
+                    value="Submit"
                   />
                 </form>
               </div>
@@ -150,7 +151,4 @@ const mapStateToProps = state => ({
   errors: state.errors
 });
 
-export default connect(
-  mapStateToProps,
-  { createProject }
-)(AddProject);
+export default connect(mapStateToProps, { createProject })(AddProject);
