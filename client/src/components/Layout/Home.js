@@ -344,10 +344,10 @@ class Home extends Component {
         </section>
         <section className="pt-8 pt-md-11 bg-gradient-light">
           <div className="container">
-            <div className="row align-items-center ">
+            <div className="row align-items-right ">
               <div
                 className="col-12 col-md-6 order-md-2 aos-init aos-animate"
-                data-aos="fade-left"
+                data-aos="fade-right"
               >
                 {/* Heading */}
                 <h2>
@@ -483,7 +483,7 @@ class Home extends Component {
               </div>
             </div>{" "}
             {/* / .row */}
-            <div className="row align-items-center">
+            <div className="row align-items-center p-5">
               <div
                 className="col-12 col-md-7 col-lg-6 aos-init"
                 data-aos="fade-right"

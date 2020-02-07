@@ -45,7 +45,7 @@ class Landing extends Component {
                     Sign Up
                     <i className="fe fe-arrow-right d-none d-md-inline ml-3" />
                   </Link>
-                  <Link to="/" className="btn btn-outline-dark mr-2">
+                  <Link to="/" className="btn btn-lg btn-outline-dark mr-2">
                     Learn More
                   </Link>
                 </div>
