@@ -6,7 +6,7 @@ import Header from "./components/Layout/Header";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import AddProject from "./components/Project/AddProject";
-import { Provider } from "react-redux";
+import { Provider, connect } from "react-redux";
 import store from "./store";
 import UpdateProject from "./components/Project/UpdateProject";
 import ProjectBoard from "./components/ProjectBoard/ProjectBoard";
@@ -22,6 +22,7 @@ import { logout } from "./actions/securityActions";
 import SecuredRoute from "./securityUtils/SecureRoute";
 import Pricing from "./components/Routes/Pricing";
 import Footer from "./components/Layout/Footer";
+import Contact from "./components/Routes/Contact";
 const jwtToken = localStorage.jwtToken;
 
 if (jwtToken) {
@@ -49,12 +50,11 @@ class App extends Component {
             {
               //Public Routes
             }
-
             <Route exact path="/" component={Landing} />
             <Route exact path="/register" component={Register} />
             <Route exact path="/login" component={Login} />
-            <Route exact path="/pricing" component={Pricing} />
-
+            <Route exact path="/pricing" component={Pricing} />{" "}
+            <Route exact path="/contact" component={Contact} />
             {
               //Private Routes
             }
