@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import cover from "../assets/img/cover-5.jpg";
 
 class Contact extends Component {
   render() {
@@ -6,7 +7,7 @@ class Contact extends Component {
       <div>
         <section
           className="py-10 py-md-14 overlay overlay-black overlay-60 bg-cover"
-          style={{ backgroundImage: "url(assets/img/covers/cover-5.jpg)" }}
+          style={{ backgroundImage: cover }}
         >
           <div className="container">
             <div className="row justify-content-center">
