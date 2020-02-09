@@ -7,7 +7,7 @@ class Contact extends Component {
       <div>
         <section
           className="py-10 py-md-14 overlay overlay-black overlay-60 bg-cover"
-          style={{ backgroundImage: cover }}
+          style={{ backgroundImage: (src = "cover") }}
         >
           <div className="container">
             <div className="row justify-content-center">
