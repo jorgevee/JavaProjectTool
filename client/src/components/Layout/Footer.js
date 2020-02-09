@@ -87,8 +87,8 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a className="text-muted" href="#">
-                  Terms
+                <a className="text-muted" href="/contact">
+                  Contact
                 </a>
               </li>
             </ul>
